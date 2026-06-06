@@ -1222,6 +1222,7 @@ impl VestingContract {
             .get(&DataKey::IsPaused)
             .unwrap_or(false);
         env.storage().instance().set(&DataKey::IsPaused, &(!paused));
+        Ok(())
     }
 
     pub fn create_vault_full(
