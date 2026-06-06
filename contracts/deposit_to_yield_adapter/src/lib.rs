@@ -76,7 +76,7 @@ pub enum AdapterError {
     InvalidProtocol,
 }
 
-#[contractevent]
+#[event]
 pub struct ProtocolWhitelisted {
     #[topic]
     pub protocol_address: Address,
@@ -85,13 +85,13 @@ pub struct ProtocolWhitelisted {
     pub risk_rating: u32,
 }
 
-#[contractevent]
+#[event]
 pub struct ProtocolDelisted {
     #[topic]
     pub protocol_address: Address,
 }
 
-#[contractevent]
+#[event]
 pub struct DepositedToYield {
     #[topic]
     pub vault_id: u64,
@@ -103,7 +103,7 @@ pub struct DepositedToYield {
     pub shares_received: i128,
 }
 
-#[contractevent]
+#[event]
 pub struct YieldClaimed {
     #[topic]
     pub vault_id: u64,
@@ -114,7 +114,7 @@ pub struct YieldClaimed {
     pub yield_amount: i128,
 }
 
-#[contractevent]
+#[event]
 pub struct InsuranceFundCapitalized {
     #[topic]
     pub asset: Address,
@@ -122,7 +122,7 @@ pub struct InsuranceFundCapitalized {
     pub total_balance: i128, // But we don't have total_balance here
 }
 
-#[contractevent]
+#[event]
 pub struct PositionWithdrawn {
     #[topic]
     pub vault_id: u64,
