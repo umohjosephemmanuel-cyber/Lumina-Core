@@ -24,7 +24,7 @@ pub struct EmergencyPause {
     pub is_active: bool,
 }
 
-#[contractevent]
+#[event]
 #[derive(Clone)]
 pub struct EmergencyPauseTriggered {
     pub auditors: Vec<Address>,
@@ -33,7 +33,7 @@ pub struct EmergencyPauseTriggered {
     pub reason: String,
 }
 
-#[contractevent]
+#[event]
 #[derive(Clone)]
 #[allow(dead_code)]
 pub struct EmergencyPauseLifted {
