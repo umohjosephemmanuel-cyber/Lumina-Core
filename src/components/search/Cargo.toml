@@ -1,0 +1,13 @@
+[package]
+name = "lumina-search"
+version = "0.1.0"
+edition = "2021"
+description = "Global fuzzy search indexer for on-chain Lumina contract state and function IDs"
+
+[lib]
+name = "lumina_search"
+path = "src/lib.rs"
+
+[dependencies]
+
+[dev-dependencies]
