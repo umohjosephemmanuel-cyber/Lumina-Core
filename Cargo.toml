@@ -8,6 +8,7 @@ members = [
     "contracts/deposit_to_yield_adapter",
     "contracts/insurance_treasury",
     "src/components/search",
+    "src/pool/shard-migration",
 ]
 resolver = "2"
 
